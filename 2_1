@@ -1,0 +1,18 @@
+2.1
+Looping a Triangle
+End results example
+#
+##
+###
+####
+#####
+######
+#######
+
+Problem:
+I ran into an issue with to properly use length. I tried using it as it was applied in the example. What the example description was stating was to use to use it to find the length of the string. This is a very important distinction that I did not grasp right away.
+
+Code:
+for(var i = "#"; i.length < 8; i += "#"){
+  console.log(i);
+}
