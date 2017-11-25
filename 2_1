@@ -10,7 +10,7 @@ End results example
 #######
 
 Problem:
-I ran into an issue with to properly use length. I tried using it as it was applied in the example. What the example description was stating was to use to use it to find the length of the string. This is a very important distinction that I did not grasp right away.
+I ran into an issue with how to properly use length. I tried using it as it was applied in the example. What the example description was stating was to use it to find the length of the string. This is a very important distinction that I did not grasp right away. Since we are not counting numbers, but hashes, we are counting the length of the string. The length of the string makes a number that can be used in an expression to compare it to another number.
 
 Code:
 for(var i = "#"; i.length < 8; i += "#"){
