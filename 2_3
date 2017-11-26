@@ -1,0 +1,37 @@
+/*
+2.3
+Chess Board
+
+End result example
+# # # # 
+ # # # #
+# # # # 
+ # # # #
+ 
+Problem:
+I was able to make everything work besides making it where each line started with either a " " or a "#". I was having it make every identical. This was an issue because it makes perfect rows, but does not look like a chess board.
+
+Example (Wrong)
+# # # # 
+# # # # 
+# # # # 
+# # # # 
+
+I have to admit that I got horribly stuck here. Everything that I was doing was not working properly. Below in the code you can see my explanation in use. The expression in the if statement verifies that variables x and y when added together are divisible by 2. When it is true it adds the " " to the front. So every even line starts with a " ".
+
+Code: */
+var size = 8;
+var board = "";
+for(var y = 0; y < size; y++){ //creating each of the lines
+  for(var x = 0; x < size; x++){ //creating each character in the lines
+    if((x + y) % 2 == 0){ //if x + y is divisble by 2 then concatinate a " " to board. Otherwise, concatinate "#" to board. Adding y looks at each line to see if it should start with a " " or a "#"
+      board += " ";
+    } else {
+      board += "#";
+    }
+    
+  }
+  board += "\n" //new line each time we count up to var size
+}
+
+console.log(board);
